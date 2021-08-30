@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="talentbank.css" midia="">
+   
+    <title>Cadastro</title>
+</head>
+
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">CADASTRO DE DEVs</h1><br><br>
+        <p id="subtitulo">DADOS PESSOAIS</p>
+        <br>
+    </div>
+    
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input required  type="text" name="nome" id="nome"> 
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input required  type="text" name="sobrenome" id="sobrenome"> 
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input required  type="email" name="email" id="email">
+            </div>
+            <div class="campo">
+                <label for="telefone celular"><strong>Telefone Celular</strong></label>
+                <input required type="text" name="telefone celular" id="telefone celular">
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Data de Nascimento</strong></label>
+            </div>  
+
+            <div class="campo">
+                <select id="dia">
+                    <option selected disabled value="">Dia</option>
+                    <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+                    <option>11</option><option>12</option><option>13</option><option>14</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option>
+                    <option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option>
+                    <option>30</option><option>31</option>                                    
+                </select>
+            </div> 
+
+            <div class="campo">
+                <select id="mes">
+                    <option selected disabled value="">Mês</option>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <select id="ano">
+                    <option selected disabled value="">Ano</option>
+                    <option>1970</option><option>1971</option><option>1973</option><option>1974</option><option>1975</option><option>1976</option><option>1977</option>
+                    <option>1978</option><option>1979</option><option>1980</option><option>1981</option><option>1982</option><option>1983</option><option>1984</option>
+                    <option>1984</option><option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option><option>1990</option>
+                    <option>1991</option><option>1992</option><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option>
+                    <option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
+                    <option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option><option>2011</option>
+                    <option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option>
+                    <option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option>                  
+                </select>
+            </div>
+        </fieldset>
+        
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Estado Civil</strong></label>
+                <select id="estado civil">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Solteiro(a)</option>
+                    <option>Casado(a)</option>
+                    <option>Divorciado(a)</option>
+                    <option>Separado(a)</option>
+                    <option>Viúvo(a)</option>
+                    <option>União Estável</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label><strong>Sexo</strong></label>
+                <select id="sexo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Prefiro não identificar</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Transgênero</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="endereco"><strong>Endereço</strong></label>
+                <input required type="text" name="endereco" id="endereco" value="">ex:Rua Bahia,285. Casa 2
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="bairro"><strong>Bairro</strong></label>
+                <input required type="text" name="bairro" id="bairro">
+            </div>
+
+            <div class="campo">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input required type="text" name="cidade" id="cidade">
+            </div>
+
+            <div class="campo">
+                <label for="cep"><strong>Cep</strong></label>
+                <input type="text" name="cep" id="cep">
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <p>DOCUMENTOS</p>
+            <br>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="identidade"><strong>Identidade</strong></label>
+                <input required type="text" name="identidade" id="identidade">
+            </div>
+
+            <div class="campo">
+                <label for="cpf"><strong>CPF</strong></label>
+                <input required  type="text" name="cpf" id="cpf"> 
+            </div>
+
+            <div class="campo">
+                <label for="veiculo"><strong>Possui Veículo</strong></label>
+                <select id="veiculo">
+                    <option selected disabled value=""></option>
+                    <option>Não</option>
+                    <option>Carro</option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="habilatacao"><strong>Habilitação</strong></label>
+                <select id="habilitacao">
+                    <option selected disabled value=""></option>
+                        <option>Categoria A</option>
+                        <option>Categoria B</option>
+                        <option>Categoria C</option>
+                        <option>Categoria D</option>
+                        <option>Categoria E</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que você conhece:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte-nos um pouco sobre a sua experiência:</strong></label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluido</button>
+    
+    </form>
+
+</body>
+
+</html>
